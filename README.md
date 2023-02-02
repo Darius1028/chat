@@ -24,7 +24,9 @@ pip install Your-library-name
 ```
 4. Then run the follwing commands to run the application:
 ```
-set FLASK_APP=chatbot.py
+export FLASK_APP=chatbot.py
+export FLASK_ENV=development
+export FLASK_DEBUG=0
 flask run
 ```
 
@@ -35,4 +37,6 @@ Ted is now ready to chat!
 #### I would like to thank [Ashutosh Varma](https://github.com/ashutoshvarma) and [Manorit Chawdhry](https://github.com/manorit2001) for their help and contribution to this project. Do check out their Github accounts!
 
 ##### Copyright (c) 2020 Karan-Malik
+
+
 
