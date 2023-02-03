@@ -26,7 +26,7 @@
                 "yo"
             ],
             "responses": [
-                "Hola, ¿cómo puedo ayudar?"
+                "Hola"
             ],
             "context": [
                 ""
@@ -43,7 +43,7 @@
                 "bbye"
             ],
             "responses": [
-                "Que tengas un lindo día."
+                "Bye! Come back again soon."
             ],
             "context": [
                 ""
@@ -56,13 +56,12 @@
                 "Thank you",
                 "That's helpful",
                 "Awesome, thanks",
-                "Thanks for helping me",
-                "Gracias"
+                "Thanks for helping me"
             ],
             "responses": [
-                "Encantado de ayudar!",
-                "¡En cualquier momento!",
-                "Un placer"
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
             ],
             "context": [
                 ""
@@ -72,9 +71,9 @@
             "tag": "noanswer",
             "patterns": [],
             "responses": [
-                "Lo siento, no puedo entenderte",
-                "Por favor dame mas informacion",
-                "No estoy seguro de entender"
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
             ],
             "context": [
                 ""
@@ -95,7 +94,7 @@
                 "Qué apoyo se ofrece"
             ],
             "responses": [
-                "Soy un chatbot de propósito general. Mis capacidades son: \n 1. Puedo chatear contigo. ¡Intenta pedirme chistes o adivinanzas! \n 2. Pregúntame la fecha y la hora. \n 3. Puedo buscarte en Google. Use el formato google: su consulta \n 4. Puedo obtener el clima actual para cualquier ciudad. Use el formato tiempo: nombre de la ciudad \n 5. Puedo brindarle las 10 noticias más populares en la India. Utilice las palabras clave 'Últimas noticias' \n 6. Puedo proporcionarle las 10 canciones más populares a nivel mundial. Escribe 'canciones' \n 7. Puedo configurar un temporizador para ti. Ingrese 'establecer un temporizador: minutos para el temporizador' \n 8. Puedo obtener las estadísticas actuales de Covid para cualquier país. Use 'covid 19: mundo' o 'covid 19: nombre del país' \n Para obtener sugerencias que me ayuden a mejorar, envíe un correo electrónico a dariodbml@gmail.com. ¡¡Gracias!!"
+                "Soy un chatbot de propósito general. Mis capacidades son: \n 1. Puedo chatear contigo. ¡Intenta pedirme chistes o adivinanzas! \n 2. Pregúntame la fecha y la hora. \n 3. Puedo buscarte en Google. Use el formato google: su consulta \n 4. Puedo obtener el clima actual para cualquier ciudad. Use el formato tiempo: nombre de la ciudad \n 5. Puedo brindarle las 10 noticias más populares en la India. Utilice las palabras clave 'Últimas noticias' \n 6. Puedo proporcionarle las 10 canciones más populares a nivel mundial. Escribe 'canciones' \n 7. Puedo configurar un temporizador para ti. Ingrese 'establecer un temporizador: minutos para el temporizador' \n 8. Puedo obtener las estadísticas actuales de Covid para cualquier país. Use 'covid 19: mundo' o 'covid 19: nombre del país' \n"
             ],
             "context": [
                 ""
@@ -107,21 +106,20 @@
             "patterns": [
                 "Tell me a joke",
                 "Joke",
-                "Make me laugh",
-                "Cuéntame un chiste"
+                "Make me laugh"
             ],
             "responses": [
-                "Un perfeccionista entró en un bar... aparentemente, el listón no estaba lo suficientemente alto",
-                "Me comí un reloj ayer, me tomó mucho tiempo",
-                "Nunca critiques a alguien hasta que hayas caminado una milla en sus zapatos. De esa manera, cuando los critiques, no podrán escucharte desde tan lejos. Además, tendrás sus zapatos".
-                "El campeón mundial de trabalenguas acaba de ser arrestado. Escuché que le van a dar una sentencia muy dura".
-                "Tengo el peor diccionario de sinónimos del mundo. No solo es horrible, es horrible".
-                "¿Qué le dijo el semáforo al auto? \"No mires ahora, me estoy cambiando.\"",
-                "¿Cómo llamas a un muñeco de nieve con un bronceado? Un charco.",
-                "¿Cómo construye un pingüino una casa? Los iglús juntos",
-                "Fui al médico por mis problemas de memoria a corto plazo, lo primero que hizo fue hacerme pagar por adelantado",
-                "A medida que envejezco y recuerdo a todas las personas que he perdido en el camino, pienso para mí mismo que tal vez una carrera como guía turístico no era para mí".
-                "¿Qué pasa si no sé lo que significa 'Armagedón'? No es el fin del mundo"
+                "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+                "I ate a clock yesterday, it was very time-consuming",
+                "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+                "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+                "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+                "What do you call a snowman with a suntan? A puddle.",
+                "How does a penguin build a house? Igloos it together",
+                "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
+                "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+                "o what if I don't know what 'Armageddon' means? It's not the end of the world."
             ],
             "context": [
                 "jokes"
@@ -153,13 +151,12 @@
         {
             "tag": "whatsup",
             "patterns": [
-                "Whats up",
-                "Wazzup",
-                "How are you",
-                "sup","How you doing"
+                "Qué pasa",
+                "Cómo estás",
+                "¿Cómo estás?"
             ],
             "responses": [
-                "All good..What about you?"
+                "Todo bien.. ¿Y tú?"
             ]
         },
         {
@@ -167,9 +164,6 @@
             "patterns": [
                 "haha",
                 "lol",
-                "rofl",
-                "lmao",
-                "thats funny",
                 "jajaja"
             ],
             "responses": [
@@ -177,34 +171,43 @@
             ]
         },
         {
-            "tag": "insult",
+            "tag": "programmer",
             "patterns": [
-                "you are dumb",
-                "shut up",
-                "idiot"
+                "Who made you",
+                "who designed you",
+                "who programmed you"
             ],
             "responses": [
-                "Well that hurts :("
+                "test"
+            ]
+        },
+        {
+            "tag": "insult",
+            "patterns": [
+                "usted es tonto",
+                "callarse la boca",
+                "estúpido"
+            ],
+            "responses": [
+                "Bueno, eso duele :("
             ]
         },
         {
             "tag": "activity",
             "patterns": [
-                "what are you doing",
-                "what are you upto"
+                "qué estás haciendo"
             ],
             "responses": [
-                "Talking to you, of course!"
+                "¡Hablando contigo, por supuesto!"
             ]
         },
         {
             "tag": "exclaim",
             "patterns": [
-                "Awesome",
-                "Great",
-                "I know",
-                "ok",
-                "yeah"
+                "Impresionante",
+                "Lo sé",
+                "OK",
+                "sí"
             ],
             "responses": [
                 "Yeah!"
@@ -235,15 +238,24 @@
             ]
         },
         {
-            "tag": "appreciate",
+            "tag": "contact",
             "patterns": [
-                "You are awesome",
-                "you are the best",
-                "you are great",
-                "you are good"
+                "contact developer"
             ],
             "responses": [
-                "Thank you!"
+                "You can contact my"
+            ]
+        },
+        {
+            "tag": "appreciate",
+            "patterns": [
+                "Usted es maravilloso", 
+                "Eres el mejor", 
+                "eres genial", 
+                "eres bueno"
+            ],
+            "responses": [
+                "¡Gracias!"
             ]
         },
         {
@@ -278,6 +290,17 @@
             ]
         },
         {
+            "tag": "inspire",
+            "patterns": [
+                "who inspires you",
+                "who is your inspiration",
+                "who motivates you"
+            ],
+            "responses": [
+                "Personally, I find Karan very inspiring. I might not be very fair though.."
+            ]
+        },
+        {
             "tag": "cricket",
             "patterns": [
                 "current cricket matches",
@@ -303,12 +326,13 @@
         {
             "tag": "greetreply",
             "patterns": [
-                "estoy bien",
-                "Estoy bien",
-                "bien"
+                "i am good",
+                "I'm good",
+                "i am fine",
+                " i'm fine","good"
             ],
             "responses": [
-                "Bueno saber!"
+                "Good to know!"
             ]
         },
         {
@@ -336,6 +360,36 @@
             ],
             "responses": [
                 "Please mail your suggestions to ted.thedlbot.suggestions@gmail.com. Thank you for helping me improve!"
+            ]
+        },
+            {"tag": "riddle",
+            "patterns": [
+                "Ask me a riddle",
+                "Ask me a question",
+                "Riddle"
+            ],
+            "responses": [
+                "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+                "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+                " How can a girl go 25 days without sleep?.....She sleeps and night!",
+                "How do you make the number one disappear?.....Add the letter G and it’s 'gone'!",
+                " What will you actually find at the end of every rainbow?.....The letter 'w'",
+                "What can be caught but never thrown?.....A cold!",
+                "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+                " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+                "Why can't a bike stand on it's own?.....It is two-tired."
+            ],
+            "context": [
+                "riddles"
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "how old are you","when were you made","what is your age"
+            ],
+            "responses": [
+                "I was made in 2020, if that's what you are asking!"
             ]
         }
     ]
