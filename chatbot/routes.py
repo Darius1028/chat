@@ -65,89 +65,11 @@ def get_response(return_list,intents_json,text):
         x+=str(dt.strftime("%H:%M:%S"))
         return x,'datetime'
 
-
-
-    if tag=='weather':
-        x=''
-        api_key='987f44e8c16780be8c85e25a409ed07b'
-        base_url = "http://api.openweathermap.org/data/2.5/weather?"
-        # city_name = input("Enter city name : ")
-        city_name = text.split(':')[1].strip()
-        complete_url = base_url + "appid=" + api_key + "&q=" + city_name
-        response = requests.get(complete_url)
-        response=response.json()
-        pres_temp=round(response['main']['temp']-273,2)
-        feels_temp=round(response['main']['feels_like']-273,2)
-        cond=response['weather'][0]['main']
-        x+='Present temp.:'+str(pres_temp)+'C. Feels like:'+str(feels_temp)+'C. '+str(cond)
-        print(x)
-        return x,'weather'
-
-    if tag=='news':
-        main_url = " http://newsapi.org/v2/top-headlines?country=in&apiKey=bc88c2e1ddd440d1be2cb0788d027ae2"
-        open_news_page = requests.get(main_url).json()
-        article = open_news_page["articles"]
-        results = []
-        x=''
-        for ar in article:
-            results.append([ar["title"],ar["url"]])
-
-        for i in range(10):
-            x+=(str(i + 1))
-            x+='. '+str(results[i][0])
-            x+=(str(results[i][1]))
-            if i!=9:
-                x+='\n'
-
-        return x,'news'
-
-    if tag=='cricket':
-        c = Cricbuzz()
-        matches = c.matches()
-        for match in matches:
-            print(match['srs'],' ',match['mnum'],' ',match['status'])
-
-    if tag=='song':
-        chart=billboard.ChartData('hot-100')
-        x='The top 10 songs at the moment are: \n'
-        for i in range(10):
-            song=chart[i]
-            x+=str(i+1)+'. '+str(song.title)+'- '+str(song.artist)
-            if i!=9:
-                x+='\n'
-        return x,'songs'
-
     if tag=='timer':
         x=text.split(':')[1].strip()
         time.sleep(float(x)*60)
         x='Timer ringing...'
         return x,'timer'
-
-
-    if tag=='covid19':
-
-        covid19=COVID19Py.COVID19(data_source='jhu')
-        country=text.split(':')[1].strip()
-        x=''
-        if country.lower()=='world':
-            latest_world=covid19.getLatest()
-            x+='Confirmed Cases:'+str(latest_world['confirmed'])+' Deaths:'+str(latest_world['deaths'])
-            return x,'covid19'
-        else:
-            latest=covid19.getLocations()
-            latest_conf=[]
-            latest_deaths=[]
-            for i in range(len(latest)):
-
-                if latest[i]['country'].lower()== country.lower():
-                    latest_conf.append(latest[i]['latest']['confirmed'])
-                    latest_deaths.append(latest[i]['latest']['deaths'])
-            latest_conf=np.array(latest_conf)
-            latest_deaths=np.array(latest_deaths)
-            x+='Confirmed Cases:'+str(np.sum(latest_conf))+' Deaths:'+str(np.sum(latest_deaths))
-            return x,'covid19'
-
-
 
     list_of_intents= intents_json['intents']
     for i in list_of_intents:
