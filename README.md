@@ -26,8 +26,9 @@ pip install Your-library-name
 ```
 export FLASK_APP=chatbot.py
 export FLASK_ENV=development
+export FLASK_RUN_PORT=9090
 export FLASK_DEBUG=0
-flask run
+flask run --host=0.0.0.0
 ```
 
 5. Enter the url provided after running the previous commands into your web browser
@@ -40,3 +41,6 @@ Ted is now ready to chat!
 
 
 
+
+
+gcloud compute firewall-rules create upt --allow tcp:9090 --source-tags="instance-4" --source-ranges=0.0.0.0/0 --description="ready"

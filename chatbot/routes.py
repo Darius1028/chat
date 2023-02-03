@@ -118,11 +118,8 @@ def get_response(return_list,intents_json,text):
         return x,'songs'
 
     if tag=='timer':
-        #mixer.init()
         x=text.split(':')[1].strip()
         time.sleep(float(x)*60)
-        #mixer.music.load('Handbell-ringing-sound-effect.mp3')
-        #mixer.music.play()
         x='Timer ringing...'
         return x,'timer'
 
@@ -166,12 +163,10 @@ def response(text):
 
 
 @app.route('/',methods=['GET','POST'])
-#@app.route('/home',methods=['GET','POST'])
 def yo():
     return render_template('main.html')
 
 @app.route('/chat',methods=['GET','POST'])
-#@app.route('/home',methods=['GET','POST'])
 def home():
     return render_template('index.html')
 
