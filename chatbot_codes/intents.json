@@ -39,6 +39,24 @@
             ]
         },
         {
+            "tag": "adiós",
+            "patterns": [
+                "Adiós",
+                "Nos vemos luego",
+                "Piérdase",
+                "Hasta la próxima",
+                "adiós"
+            ],
+            "responses": [
+                "¡Nos vemos!",
+                "Que tenga un lindo día",
+                "¡Adiós! Vuelve pronto"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
             "tag": "thanks",
             "patterns": [
                 "Gracias",
@@ -83,7 +101,7 @@
                 "Qué apoyo se ofrece"
             ],
             "responses": [
-                "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n 3. I can google search for you. Use format google: your query \n 4. I can get the present weather for any city. Use format weather: city name \n 5. I can get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. I can get you the top 10 trending songs globally. Type 'songs' \n 7. I can set a timer for you. Enter 'set a timer: minutes to timer' \n 8. I can get the present Covid stats for any country. Use 'covid 19: world' or 'covid 19: country name' \n For suggestions to help me improve, send an email to ted.thedlbot.suggestions@gmail.com . Thank you!! "
+                "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n 3. I can google search for you. Use format google: your query \n 4. I can get the present weather for any city. Use format weather: city name \n 5. I can get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. I can get you the top 10 trending songs globally. Type 'songs' \n 7. I can set a timer for you. Enter 'set a timer: minutes to timer' \n 8. I can get the present Covid stats for any country. Use 'covid 19: world' or 'covid 19: country name' \n For suggestions to help me improve, send an email to john_doe@gmail.com . Thank you!! "
             ],
             "context": [
                 ""
@@ -117,10 +135,12 @@
         "tag": "Identity",
         "patterns": [
           "Who are you",
-          "what are you"
+          "what are you",
+          "quien eres",
+          "que eres"
         ],
         "responses": [
-          "I am Ted, a Deep-Learning chatbot"
+          "I am John, a chatbot asistente"
         ]
       },
       {
@@ -132,7 +152,13 @@
           "time",
           "tell me the date",
           "day",
-          "what day is is today"
+          "what day is is today",
+          "Qué hora es", 
+          "cual es la fecha", 
+          "fecha", "tiempo", 
+          "dime la fecha", 
+          "día", 
+          "que dia es hoy"
         ],
         "responses": [
           "Date and Time"
