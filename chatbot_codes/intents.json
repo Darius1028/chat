@@ -75,6 +75,24 @@
             ]
         },
         {
+            "tag": "gracias",
+            "patterns": [
+                "Gracias",
+                "Gracias",
+                "Eso es útil",
+                "Genial gracias",
+                "Gracias por ayudarme"
+            ],
+            "responses": [
+                "¡Encantado de ayudarle!",
+                "¡En cualquier momento!",
+                "Mi placer"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
             "tag": "noanswer",
             "patterns": [],
             "responses": [
