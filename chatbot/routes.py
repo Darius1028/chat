@@ -58,7 +58,7 @@ def get_response(return_list,intents_json,text):
         tag=return_list[0]['intent']
     if tag=='datetime':
         x=''
-        tz = pytz.timezone('Asia/Kolkata')
+        tz = pytz.timezone('America/Guayaquil')
         dt=datetime.now(tz)
         x+=str(dt.strftime("%A"))+' '
         x+=str(dt.strftime("%d %B %Y"))+' '
