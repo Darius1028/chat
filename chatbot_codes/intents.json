@@ -274,6 +274,35 @@
             "responses": [
                 "¡Me hicieron en 2023, si eso es lo que estás preguntando!"
             ]
-        }
+        },
+        {
+            "tag": "timer",
+            "patterns": [
+                "set a timer"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "contact",
+            "patterns": [
+                "contact developer",
+            ],
+            "responses": [
+                "You can contact my creator"
+            ]
+        },
+        {
+            "tag": "programmer",
+            "patterns": [
+                "Who made you",
+                "who designed you",
+                "who programmed you"
+            ],
+            "responses": [
+                "I was made"
+            ]
+        },
     ]
 }
