@@ -9,7 +9,8 @@
                 "Eh",
                 "hola",
                 "Buenos días",
-                "yo"
+                "Buen dia",
+                "Saludos"
             ],
             "responses": [
                 "Hola",
@@ -155,7 +156,21 @@
           "Who are you",
           "what are you",
           "quien eres",
-          "que eres"
+          "que eres",
+          "Quien es tu?"
+        ],
+        "responses": [
+          "I am John, a chatbot asistente"
+        ]
+      },
+      {
+        "tag": "Ayuda",
+        "patterns": [
+          "Who are you",
+          "what are you",
+          "quien eres",
+          "que eres",
+          "Quien es tu?"
         ],
         "responses": [
           "I am John, a chatbot asistente"
