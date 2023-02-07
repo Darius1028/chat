@@ -203,7 +203,7 @@
             </div>
 
             <div class="msg-text">
-              Hey, I am Ted. Type below to talk to me...
+              Hola, soy John Doe. Escribe abajo para hablar conmigo...
             </div>
           </div>
         </div>
@@ -214,7 +214,7 @@
           type="text"
           class="msger-input"
           id="textInput"
-          placeholder="Enter your message. Type 'help' to know all my capabilities..."
+          placeholder="Ingrese su mensaje. Escribe 'ayuda' para conocer todas mis capacidades..."
         />
 
         <button type="submit" class="msger-send-btn">Send</button>
@@ -245,14 +245,7 @@
 
         const msgText = msgerInput.value;
         temp = msgText.split(":");
-        if (temp[0].toLowerCase().trim() == "google") {
-          search = "https://www.google.com/search?q=" + temp[1].trim();
-          window.open(search);
-        }
         if (!msgText) return;
-        if (temp[0].toLowerCase().trim() == "set a timer") {
-          play();
-        }
 
         appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
         msgerInput.value = "";

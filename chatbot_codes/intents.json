@@ -71,6 +71,11 @@
         {
             "tag": "options",
             "patterns": [
+                "How you could help me?",
+                "What you can do?",
+                "What help you provide?",
+                "How you can be helpful?",
+                "What support is offered",
                 "¿Cómo podrías ayudarme?",
                 "¿Lo que puedes hacer?",
                 "¿Qué ayuda proporcionas?",
@@ -84,225 +89,237 @@
                 ""
             ]
         },
-        
-        {
-            "tag": "jokes",
-            "patterns": [
-                "Cuéntame un chiste",
-                "Broma",
-                "Hazme reir"
-            ],
-            "responses": [
-                "Un perfeccionista entró en un bar... aparentemente, el listón no estaba lo suficientemente alto",
-                "Me comí un reloj ayer, me tomó mucho tiempo",
-                "Nunca critiques a alguien hasta que hayas caminado una milla en sus zapatos. De esa manera, cuando los critiques, no podrán escucharte desde tan lejos. Además, tendrás sus zapatos".
-                "El campeón mundial de trabalenguas acaba de ser arrestado. Escuché que le van a dar una sentencia muy dura".
-                "Tengo el peor diccionario de sinónimos del mundo. No solo es horrible, es horrible".
-                "¿Qué le dijo el semáforo al auto? \"No mires ahora, me estoy cambiando.\"",
-                "¿Cómo llamas a un muñeco de nieve con un bronceado? Un charco.",
-                "¿Cómo construye un pingüino una casa? Los iglús juntos",
-                "Fui al médico por mis problemas de memoria a corto plazo, lo primero que hizo fue hacerme pagar por adelantado",
-                "A medida que envejezco y recuerdo a todas las personas que he perdido en el camino, pienso para mí mismo que tal vez una carrera como guía turístico no era para mí".
-                "¿Qué pasa si no sé lo que significa 'Armagedón'? No es el fin del mundo".
-            ],
-            "context": [
-                "jokes"
-            ]
-        },
-        {
-            "tag": "Identity",
-            "patterns": [
-                "Quién eres",
-                "Qué eres"
-            ],
-            "responses": [
-                "I am John"
-            ]
-        },
-        {
-            "tag": "datetime",
-            "patterns": [
-                "Qué hora es",
-                "cual es la fecha",
-                "fecha",
-                "tiempo",
-                "dime la fecha","día","qué día es hoy"
-            ],
-            "responses": [
-                "Fecha y hora"
-            ]
-        },
-        {
-            "tag": "whatsup",
-            "patterns": [
-                "Qué pasa",
-                "Wazzup",
-                "Cómo estás",
-                "sup","¿Cómo estás?"
-            ],
-            "responses": [
-                "Todo bien... ¿Qué hay de ti?"
-            ]
-        },
-        {
-            "tag": "haha",
-            "patterns": [
-                "ja ja",
-                "jajaja",
-                "Es gracioso"
-            ],
-            "responses": [
-                "¡Me alegro de poder hacerte reír!"
-            ]
-        },
-        {
-            "tag": "insult",
-            "patterns": [
-                "usted es tonto",
-                "callarse la boca",
-                "estúpido"
-            ],
-            "responses": [
-                "Bueno, eso duele :("
-            ]
-        },
-        {
-            "tag": "activity",
-            "patterns": [
-                "qué estás haciendo",
-                "qué estás haciendo?"
-            ],
-            "responses": [
-                "¡Hablando contigo, por supuesto!"
-            ]
-        },
-        {
-            "tag": "exclaim",
-            "patterns": [
-                "Impresionante",
-                "Excelente",
-                "Lo sé",
-                "OK",
-                "sí"
-            ],
-            "responses": [
-                "Siii!"
-            ]
-        },
-        {
-            "tag": "appreciate",
-            "patterns": [
-                "Usted es maravilloso",
-                "Eress el mejor",
-                "eres genial",
-                "eres bueno"
-            ],
-            "responses": [
-                "¡Gracias!"
-            ]
-        },
-        {
-            "tag": "nicetty",
-            "patterns": [
-                "fue agradable conversar contigo",
-                "buena charla"
-            ],
-            "responses": [
-                "¡Fue agradable hablar contigo también! ¡Vuelve pronto!"
-            ]
-        },
-        {
-            "tag": "no",
-            "patterns": [
-                "no",
-                "nope"
-            ],
-            "responses": [
-                "ok"
-            ]
-        },
-        {
-            "tag": "greetreply",
-            "patterns": [
-                "estoy bien",
-                "Estoy bien",
-                "bien"
-            ],
-            "responses": [
-                "¡Bueno saber!"
-            ]
-        },
-        {
-            "tag": "suggest",
-            "patterns": [
-                "usted es inútil",
-                "inútil",
-                "sugerir",
-                "sugerencias",
-                "eres malo"
-            ],
-            "responses": [
-                "Envíe sus sugerencias por correo electrónico a dariodml@gmail.com. ¡Gracias por ayudarme a mejorar!"
-            ]
-        },
-            {"tag": "riddle",
-            "patterns": [
-                "Pregúntame un acertijo",
-                "Hazme una pregunta",
-                "Enigma"
-            ],
-            "responses": [
-                "¿Qué dos cosas nunca puedes comer en el desayuno? ¡Almuerzo y cena!",
-                "¿Qué palabra está mal escrita en todos los diccionarios?... Incorrectamente",
-                "¿Cómo una niña puede pasar 25 días sin dormir?... ¡Duerme y noche!",
-                "¿Cómo haces que desaparezca el número uno? ¡Añade la letra G y desaparece!",
-                "¿Qué encontrarás realmente al final de cada arcoíris?... La letra 'w'",
-                "¿Qué se puede atrapar pero nunca tirar?... ¡Un resfriado!",
-                "¿Qué tiene un pulgar y cuatro dedos pero no está realmente vivo?... ¡Tus guantes!",
-                "¿Qué palabra de 5 letras se vuelve más corta cuando le agregas dos letras?.....Corta",
-                "¿Por qué una bicicleta no puede sostenerse por sí sola? ... Tiene dos llantas"
-            ],
-            "context": [
-                "riddles"
-            ]
-        },
-        {
-            "tag": "age",
-            "patterns": [
-                "¿cuántos años tienes?", "cuándo te hicieron", "cuál es tu edad"
-            ],
-            "responses": [
-                "¡Me hicieron en 2023, si eso es lo que estás preguntando!"
-            ]
-        },
-        {
-            "tag": "timer",
-            "patterns": [
-                "set a timer"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "contact",
-            "patterns": [
-                "contact developer",
-            ],
-            "responses": [
-                "You can contact my creator"
-            ]
-        },
-        {
-            "tag": "programmer",
-            "patterns": [
-                "Who made you",
-                "who designed you",
-                "who programmed you"
-            ],
-            "responses": [
-                "I was made"
-            ]
-        },
+      {
+        "tag": "jokes",
+        "patterns": [
+          "Tell me a joke",
+          "Joke",
+          "Make me laugh"
+        ],
+        "responses": [
+          "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+          "I ate a clock yesterday, it was very time-consuming",
+          "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+          "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+          "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+          "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+          "What do you call a snowman with a suntan? A puddle.",
+          "How does a penguin build a house? Igloos it together",
+          "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
+          "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+          "o what if I don't know what 'Armageddon' means? It's not the end of the world."
+        ],
+        "context": [
+          "jokes"
+        ]
+      },
+      {
+        "tag": "Identity",
+        "patterns": [
+          "Who are you",
+          "what are you"
+        ],
+        "responses": [
+          "I am Ted, a Deep-Learning chatbot"
+        ]
+      },
+      {
+        "tag": "datetime",
+        "patterns": [
+          "What is the time",
+          "what is the date",
+          "date",
+          "time",
+          "tell me the date",
+          "day",
+          "what day is is today"
+        ],
+        "responses": [
+          "Date and Time"
+        ]
+      },
+      {
+        "tag": "whatsup",
+        "patterns": [
+          "Whats up",
+          "Wazzup",
+          "Cómo estás",
+          "sup",
+          "How you doing"
+        ],
+        "responses": [
+          "All good..What about you?"
+        ]
+      },
+      {
+        "tag": "haha",
+        "patterns": [
+          "haha",
+          "lol",
+          "rofl",
+          "lmao",
+          "thats funny"
+        ],
+        "responses": [
+          "Glad I could make you laugh !"
+        ]
+      },
+      {
+        "tag": "programmer",
+        "patterns": [
+          "Who made you",
+          "who designed you",
+          "who programmed you"
+        ],
+        "responses": [
+          "I was made by Karan Malik."
+        ]
+      },
+      {
+        "tag": "insult",
+        "patterns": [
+          "you are dumb",
+          "shut up",
+          "idiot"
+        ],
+        "responses": [
+          "Well that hurts :("
+        ]
+      },
+      {
+        "tag": "activity",
+        "patterns": [
+          "what are you doing",
+          "what are you upto"
+        ],
+        "responses": [
+          "Talking to you, of course!"
+        ]
+      },
+      {
+        "tag": "exclaim",
+        "patterns": [
+          "Awesome",
+          "Great",
+          "I know",
+          "ok",
+          "yeah"
+        ],
+        "responses": [
+          "Yeah!"
+        ]
+      },
+      {
+        "tag": "contact",
+        "patterns": [
+          "contact developer",
+          "contact karan",
+          "contact programmer",
+          "contact creator"
+        ],
+        "responses": [
+          "You can contact my creator at his Linkedin profile : www.linkedin.com/in/karan-malik-3a39191a7"
+        ]
+      },
+      {
+        "tag": "appreciate",
+        "patterns": [
+          "You are awesome",
+          "you are the best",
+          "you are great",
+          "you are good"
+        ],
+        "responses": [
+          "Thank you!"
+        ]
+      },
+      {
+        "tag": "nicetty",
+        "patterns": [
+          "it was nice talking to you",
+          "good talk"
+        ],
+        "responses": [
+          "It was nice talking to you as well! Come back soon!"
+        ]
+      },
+      {
+        "tag": "no",
+        "patterns": [
+          "no",
+          "nope"
+        ],
+        "responses": [
+          "ok"
+        ]
+      },
+      {
+        "tag": "greetreply",
+        "patterns": [
+          "i am good",
+          "I'm good",
+          "i am fine",
+          " i'm fine",
+          "good"
+        ],
+        "responses": [
+          "Good to know!"
+        ]
+      },
+      {
+        "tag": "timer",
+        "patterns": [
+          "set a timer"
+        ],
+        "responses": [
+          "..."
+        ]
+      },
+      {
+        "tag": "suggest",
+        "patterns": [
+          "you are useless",
+          "useless",
+          "suggest",
+          "suggestions",
+          "you are bad"
+        ],
+        "responses": [
+          "Please mail your suggestions to ok@gmail.com. Thank you for helping me improve!"
+        ]
+      },
+      {
+        "tag": "riddle",
+        "patterns": [
+          "Ask me a riddle",
+          "Ask me a question",
+          "Riddle"
+        ],
+        "responses": [
+          "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+          "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+          " How can a girl go 25 days without sleep?.....She sleeps and night!",
+          "How do you make the number one disappear?.....Add the letter G and it’s 'gone'!",
+          " What will you actually find at the end of every rainbow?.....The letter 'w'",
+          "What can be caught but never thrown?.....A cold!",
+          "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+          " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+          "Why can't a bike stand on it's own?.....It is two-tired."
+        ],
+        "context": [
+          "riddles"
+        ]
+      },
+      {
+        "tag": "age",
+        "patterns": [
+          "how old are you",
+          "when were you made",
+          "what is your age"
+        ],
+        "responses": [
+          "I was made in 2023, if that's what you are asking!"
+        ]
+      }
     ]
-}
+  }
