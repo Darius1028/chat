@@ -2,7 +2,7 @@ import flask
 from flask import Flask
 from chatbotconfig import Config
 
-app=Flask(__name__, static_url_path='/asset')
+app=Flask(__name__, static_url_path='', static_folder='asset', template_folder='templates')
 
 app.config.from_object(Config)
 
