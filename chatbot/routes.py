@@ -13,14 +13,11 @@ from datetime import datetime
 import pytz
 import requests
 import os
-import billboard
 import time
 from pygame import mixer
-import COVID19Py
 
 from nltk.stem import WordNetLemmatizer
 lemmatizer=WordNetLemmatizer()
-
 
 #Predict
 def clean_up(sentence):
