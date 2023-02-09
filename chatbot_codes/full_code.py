@@ -8,12 +8,8 @@ from keras.models import Sequential
 from keras.layers import Dense,Dropout,Activation
 import random
 import datetime
-import webbrowser
 import requests
-import billboard
 import time
-from pygame import mixer
-import COVID19Py
 
 
 from nltk.stem import WordNetLemmatizer
