@@ -83,8 +83,8 @@ classes = pickle.load(open('classes.pkl','rb'))
 
 #Predict
 def clean_up(sentence):
-    sentence_words=nltk.word_tokenize(sentence)
-    sentence_words=[ lemmatizer.lemmatize(word.lower()) for word in sentence_words]
+    sentence_words=TextBlob(sentence).words
+    sentence_words=[Word(word.lower()).lemmatize() for word in sentence_words]
     return sentence_words
 
 def create_bow(sentence,words):
