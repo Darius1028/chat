@@ -1,7 +1,7 @@
 {
     "intents": [
         {
-            "tag": "greeting",
+            "tag": "saludos",
             "patterns": [
                 "Hola",
                 "Cómo estás",
@@ -16,24 +16,6 @@
                 "Hola",
                 "Es bueno verte de nuevo",
                 "Hola, ¿cómo puedo ayudar?"
-            ],
-            "context": [
-                ""
-            ]
-        },
-        {
-            "tag": "goodbye",
-            "patterns": [
-                "Adiós",
-                "Nos vemos luego",
-                "Piérdase",
-                "Hasta la próxima",
-                "adiós"
-            ],
-            "responses": [
-                "¡Nos vemos!",
-                "Que tenga un lindo día",
-                "¡Adiós! Vuelve pronto"
             ],
             "context": [
                 ""
@@ -58,24 +40,6 @@
             ]
         },
         {
-            "tag": "thanks",
-            "patterns": [
-                "Gracias",
-                "Gracias",
-                "Eso es útil",
-                "Genial gracias",
-                "Gracias por ayudarme"
-            ],
-            "responses": [
-                "¡Encantado de ayudarle!",
-                "¡En cualquier momento!",
-                "Mi placer"
-            ],
-            "context": [
-                ""
-            ]
-        },
-        {
             "tag": "gracias",
             "patterns": [
                 "Gracias",
@@ -94,7 +58,7 @@
             ]
         },
         {
-            "tag": "noanswer",
+            "tag": "sin respuesta",
             "patterns": [],
             "responses": [
                 "Lo siento, no puedo entenderte",
@@ -106,13 +70,8 @@
             ]
         },
         {
-            "tag": "options",
+            "tag": "opciones",
             "patterns": [
-                "How you could help me?",
-                "What you can do?",
-                "What help you provide?",
-                "How you can be helpful?",
-                "What support is offered",
                 "¿Cómo podrías ayudarme?",
                 "¿Lo que puedes hacer?",
                 "¿Qué ayuda proporcionas?",
@@ -120,38 +79,38 @@
                 "Qué apoyo se ofrece"
             ],
             "responses": [
-                "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n 3. I can google search for you. Use format google: your query \n 4. I can get the present weather for any city. Use format weather: city name \n 5. I can get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. I can get you the top 10 trending songs globally. Type 'songs' \n 7. I can set a timer for you. Enter 'set a timer: minutes to timer' \n 8. I can get the present Covid stats for any country. Use 'covid 19: world' or 'covid 19: country name' \n For suggestions to help me improve, send an email to john_doe@gmail.com . Thank you!! "
+                "Soy un chatbot de propósito general. Mis capacidades son: \n 1. Puedo chatear contigo. ¡Intenta pedirme chistes o adivinanzas! \n 2. Pregúntame la fecha y la hora \n Para obtener sugerencias que me ayuden a mejorar, envía un correo electrónico a john_doe@gmail.com . ¡¡Gracias!!"
             ],
             "context": [
                 ""
             ]
         },
       {
-        "tag": "jokes",
+        "tag": "chistes",
         "patterns": [
-          "Tell me a joke",
-          "Joke",
-          "Make me laugh"
+          "Cuéntame un chiste",
+          "Broma",
+          "Hazme reir"
         ],
         "responses": [
-          "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
-          "I ate a clock yesterday, it was very time-consuming",
-          "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
-          "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
-          "I own the world's worst thesaurus. Not only is it awful, it's awful.",
-          "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
-          "What do you call a snowman with a suntan? A puddle.",
-          "How does a penguin build a house? Igloos it together",
-          "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
-          "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
-          "o what if I don't know what 'Armageddon' means? It's not the end of the world."
+          "Un perfeccionista entró en un bar... aparentemente, el listón no estaba lo suficientemente alto",
+          "Me comí un reloj ayer, me tomó mucho tiempo",
+          "Nunca critiques a alguien hasta que hayas caminado una milla en sus zapatos. De esa manera, cuando los critiques, no podrán escucharte desde tan lejos. Además, tendrás sus zapatos".
+          "El campeón mundial de trabalenguas acaba de ser arrestado. Escuché que le van a dar una sentencia muy dura".
+          "Tengo el peor diccionario de sinónimos del mundo. No solo es horrible, es horrible".
+          "¿Qué le dijo el semáforo al auto? \"No mires ahora, me estoy cambiando.\"",
+          "¿Cómo llamas a un muñeco de nieve con un bronceado? Un charco.",
+          "¿Cómo construye un pingüino una casa? Los iglús juntos",
+          "Fui al médico por mis problemas de memoria a corto plazo, lo primero que hizo fue hacerme pagar por adelantado",
+          "A medida que envejezco y recuerdo a todas las personas que he perdido en el camino, pienso para mí mismo que tal vez una carrera como guía turístico no era para mí".
+          "¿Qué pasa si no sé lo que significa 'Armagedón'? No es el fin del mundo".
         ],
         "context": [
-          "jokes"
+          "chistes"
         ]
       },
       {
-        "tag": "Identity",
+        "tag": "Identidad",
         "patterns": [
           "Who are you",
           "what are you",
@@ -177,15 +136,8 @@
         ]
       },
       {
-        "tag": "datetime",
+        "tag": "fecha y hora",
         "patterns": [
-          "What is the time",
-          "what is the date",
-          "date",
-          "time",
-          "tell me the date",
-          "day",
-          "what day is is today",
           "Qué hora es", 
           "cual es la fecha", 
           "fecha", "tiempo", 
@@ -194,112 +146,95 @@
           "que dia es hoy"
         ],
         "responses": [
-          "Date and Time"
+          "fecha y hora"
         ]
       },
       {
         "tag": "whatsup",
         "patterns": [
-          "Whats up",
-          "Wazzup",
-          "Cómo estás",
-          "sup",
-          "How you doing"
+          "Cómo estás"
         ],
         "responses": [
-          "All good..What about you?"
+          "Todo bien.. ¿Y tú?"
         ]
       },
       {
         "tag": "haha",
         "patterns": [
-          "haha",
-          "lol",
+          "ja ja",
+          "jajaja",
           "rofl",
           "lmao",
-          "thats funny"
+          "Es gracioso"
         ],
         "responses": [
-          "Glad I could make you laugh !"
+          "Encantado de poder hacerte reír !"
         ]
       },
       {
-        "tag": "programmer",
+        "tag": "insulto",
         "patterns": [
-          "Who made you",
-          "who designed you",
-          "who programmed you"
+          "usted es tonto",
+          "callarse la boca",
+          "estúpido"
         ],
         "responses": [
-          "I was made by Karan Malik."
+          "Bueno, eso duele :("
         ]
       },
       {
-        "tag": "insult",
+        "tag": "actividad",
         "patterns": [
-          "you are dumb",
-          "shut up",
-          "idiot"
+          "qué estás haciendo",
+          "qué estás haciendo"
         ],
         "responses": [
-          "Well that hurts :("
+          "¡Hablando contigo, por supuesto!"
         ]
       },
       {
-        "tag": "activity",
+        "tag": "exclamar",
         "patterns": [
-          "what are you doing",
-          "what are you upto"
+          "Impresionante",
+          "Excelente",
+          "Lo sé",
+          "OK",
+          "sí"
         ],
         "responses": [
-          "Talking to you, of course!"
+          "Sipp!"
         ]
       },
       {
-        "tag": "exclaim",
+        "tag": "contacto",
         "patterns": [
-          "Awesome",
-          "Great",
-          "I know",
-          "ok",
-          "yeah"
+          "contacto desarrollador",
+          "contacto creador"
         ],
         "responses": [
-          "Yeah!"
+          "Puedes contactar a mi creador por mail al dariodbml@gmail.com"
         ]
       },
       {
-        "tag": "contact",
+        "tag": "agradecer",
         "patterns": [
-          "contact developer",
-          "contact karan",
-          "contact programmer",
-          "contact creator"
+          "Usted es maravilloso",
+          "Eress el mejor",
+          "eres genial",
+          "eres bueno"
         ],
         "responses": [
-          "You can contact my creator at his Linkedin profile : www.linkedin.com/in/karan-malik-3a39191a7"
+          "¡Gracias!"
         ]
       },
       {
-        "tag": "appreciate",
+        "tag": "agradable",
         "patterns": [
-          "You are awesome",
-          "you are the best",
-          "you are great",
-          "you are good"
+          "fue agradable conversar contigo",
+          "buena charla"
         ],
         "responses": [
-          "Thank you!"
-        ]
-      },
-      {
-        "tag": "nicetty",
-        "patterns": [
-          "it was nice talking to you",
-          "good talk"
-        ],
-        "responses": [
-          "It was nice talking to you as well! Come back soon!"
+          "¡Fue agradable hablar contigo también! ¡Vuelve pronto!"
         ]
       },
       {
@@ -335,49 +270,49 @@
         ]
       },
       {
-        "tag": "suggest",
+        "tag": "sugerir",
         "patterns": [
-          "you are useless",
-          "useless",
-          "suggest",
-          "suggestions",
-          "you are bad"
+          "usted es inútil",
+          "inútil",
+          "sugerir",
+          "sugerencias",
+          "eres malo"
         ],
         "responses": [
-          "Please mail your suggestions to ok@gmail.com. Thank you for helping me improve!"
+          "Envíe sus sugerencias por correo electrónico a dariodbml@gmail.com. ¡Gracias por ayudarme a mejorar!"
         ]
       },
       {
-        "tag": "riddle",
+        "tag": "enigma",
         "patterns": [
-          "Ask me a riddle",
-          "Ask me a question",
-          "Riddle"
+          "Pregúntame un acertijo",
+          "Hazme una pregunta",
+          "Enigma"
         ],
         "responses": [
-          "What two things can you never eat for breakfast?.....Lunch and Dinner!",
-          "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
-          " How can a girl go 25 days without sleep?.....She sleeps and night!",
-          "How do you make the number one disappear?.....Add the letter G and it’s 'gone'!",
-          " What will you actually find at the end of every rainbow?.....The letter 'w'",
-          "What can be caught but never thrown?.....A cold!",
-          "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
-          " What 5-letter word becomes shorter when you add two letters to it?.....Short",
-          "Why can't a bike stand on it's own?.....It is two-tired."
+          "¿Qué dos cosas nunca puedes comer en el desayuno? ¡Almuerzo y cena!",
+          "¿Qué palabra está mal escrita en todos los diccionarios?... Incorrectamente",
+          "¿Cómo una niña puede pasar 25 días sin dormir?... ¡Duerme y noche!",
+          "¿Cómo haces que desaparezca el número uno? ¡Añade la letra G y desaparece!",
+          "¿Qué encontrarás realmente al final de cada arcoíris?... La letra 'w'",
+          "¿Qué se puede atrapar pero nunca tirar?... ¡Un resfriado!",
+          "¿Qué tiene un pulgar y cuatro dedos pero no está realmente vivo?... ¡Tus guantes!",
+          "¿Qué palabra de 5 letras se vuelve más corta cuando le agregas dos letras?.....Corta",
+          "¿Por qué una bicicleta no puede sostenerse por sí sola? ... Tiene dos llantas".
         ],
         "context": [
-          "riddles"
+          "enigma"
         ]
       },
       {
-        "tag": "age",
+        "tag": "edad",
         "patterns": [
-          "how old are you",
-          "when were you made",
-          "what is your age"
+          "cuántos años tiene",
+          "cuándo fuiste hecho",
+          "Cuál es tu edad"
         ],
         "responses": [
-          "I was made in 2023, if that's what you are asking!"
+          "¡Me hicieron en 2023, si eso es lo que estás preguntando!"
         ]
       }
     ]

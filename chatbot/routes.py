@@ -44,10 +44,10 @@ def predict_class(sentence,model):
 def get_response(return_list,intents_json,text):
 
     if len(return_list)==0:
-        tag='noanswer'
+        tag='sin respuesta'
     else:
         tag=return_list[0]['intent']
-    if tag=='datetime':
+    if tag=='fecha y hora':
         x=''
         tz = pytz.timezone('America/Guayaquil')
         dt=datetime.now(tz)

@@ -6,8 +6,6 @@ import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense,Dropout,Activation
 import random
-import datetime
-import requests
 import time
 
 from textblob import TextBlob, Word
@@ -112,10 +110,10 @@ def predict_class(sentence,model):
 def get_response(return_list,intents_json):
     
     if len(return_list)==0:
-        tag='noanswer'
+        tag='sin respuesta'
     else:    
         tag=return_list[0]['intent']
-    if tag=='datetime':        
+    if tag=='fecha y hora':        
         print(time.strftime("%A"))
         print (time.strftime("%d %B %Y"))
         print (time.strftime("%H:%M:%S"))
