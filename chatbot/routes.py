@@ -3,26 +3,20 @@ from flask import render_template,flash, request
 from chatbot.forms import chatbotform
 from chatbot.__init__ import model,words,classes,intents
 
-import nltk
-import pickle
-import json
 import numpy as np
 from keras.models import Sequential,load_model
 import random
 from datetime import datetime
 import pytz
-import requests
-import os
 import time
 from pygame import mixer
 
-from nltk.stem import WordNetLemmatizer
-lemmatizer=WordNetLemmatizer()
+from textblob import TextBlob, Word
 
 #Predict
 def clean_up(sentence):
-    sentence_words=nltk.word_tokenize(sentence)
-    sentence_words=[ lemmatizer.lemmatize(word.lower()) for word in sentence_words]
+    sentence_words=TextBlob(sentence).words
+    sentence_words=[Word(word.lower()).lemmatize() for word in sentence_words]
     return sentence_words
 
 def create_bow(sentence,words):
